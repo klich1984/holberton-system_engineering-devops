@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -printf "%TY-%Tm %TT %p\n" | sort -r
