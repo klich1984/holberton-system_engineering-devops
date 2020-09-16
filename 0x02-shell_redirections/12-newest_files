@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head
+find . -type f -mtime 0 -ls | tr -s ' ' | cut -d " " -f9,10,11,12 | sort -r | cut -d "/" -f2 | head -10
