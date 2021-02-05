@@ -16,3 +16,26 @@ CTRL+U # kills backward to the beginning of line
 CTRL+W # kills the word behind the cursor
 CTRL+Y # retrieves last deleted string
 CTRL+Z # stops the current command, resume with fg in the foreground or bg in the background
+
+===================================================================
+							Español
+===================================================================
+
+Algunos atajos útiles:
+
+CTRL+A # va al principio de la línea
+CTRL+B # retrocede un carácter
+CTRL+C # detiene el comando actual
+CTRL+D # borra un carácter hacia atrás o cierra la sesión actual
+CTRL+E # va al final de la línea
+CTRL+F # avanza un carácter
+CTRL+G # aborta el comando de edición actual y hace sonar la campana del terminal
+CTRL+K # borra (mata) avanza hasta el final de la línea
+CTRL+L # borra la pantalla y vuelve a mostrar la línea
+CTRL+N # siguiente línea en el historial de comandos
+CTRL+R # busca en el historial de comandos
+CTRL+T # transpone dos caracteres
+CTRL+U # retrocede al principio de la línea
+CTRL+W # elimina la palabra detrás del cursor
+CTRL+Y # recupera la última cadena borrada
+CTRL+Z # detiene el comando actual, reanuda con fg en primer plano o bg en segundo plano
