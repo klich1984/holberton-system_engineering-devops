@@ -65,3 +65,73 @@ xargs # build and execute command lines from standard input
 > # redirect standard output
 < # redirect standard input
 & # send process to background
+
+
+===================================================================
+							Español
+===================================================================
+awk # lenguaje de exploración y procesamiento de patrones
+basename # quita el directorio y el sufijo de los nombres de archivo
+bg # reanuda los trabajos suspendidos sin llevarlos al primer plano
+cat # imprime los archivos
+cd # cambiar el directorio de trabajo del shell
+chmod # cambiar el modo del archivo
+chown # cambiar el propietario y el grupo del archivo
+crontab # mantener los archivos crontab
+curl # transferir una URL
+cut # eliminar secciones de cada línea de archivos
+date # mostrar o establecer la fecha y la hora
+dig # utilidad de búsqueda de DNS
+df # informar del uso del espacio en disco del sistema de archivos
+diff # comparar archivos línea por línea
+du # estimar el uso del espacio de los archivos
+echo # mostrar una línea de texto
+find # buscar archivos en una jerarquía de directorios
+fg # reanuda los trabajos suspendidos y los pone en primer plano
+grep # imprime las líneas que coinciden con un patrón
+kill # envía una señal a un proceso
+less # leer un archivo con paginación
+ln # crear enlaces
+ls # lista el contenido de los directorios
+lsb_release # imprimir información específica de la distribución
+lsof # listar archivos abiertos
+mkdir # crear
+mv # mover archivos
+nc # conexiones y escuchas TCP y UDP arbitrarias
+netstat # imprimir conexiones de red, tablas de enrutamiento, estadísticas de interfaz...
+nice # ejecutar una utilidad con una prioridad de programación alterada
+nproc # imprimir el número de unidades de procesamiento disponibles
+passwd # cambiar la contraseña del usuario
+pgrep # buscar procesos basados en el nombre y otros atributos
+pkill # envía una señal a los procesos basándose en el nombre y otros atributos
+printenv # imprimir todo o parte del entorno
+pwd # imprimir el nombre del directorio actual/de trabajo
+top # mostrar los procesos de Linux
+tr # traducir o borrar caracteres
+ps # informar de una instantánea de los procesos actuales
+rm # eliminar archivos o directorios
+rmdir # eliminar directorios
+rsync # copia remota de archivos
+scp # copia segura (programa de copia remota de archivos)
+sed # editor de flujo para filtrar y transformar texto
+sleep # suspender la ejecución durante un intervalo de tiempo
+sort # ordenar las líneas de un archivo de texto
+ssh # cliente SSH OpenSSH (programa de inicio de sesión remoto)
+ssh-keygen # generación, gestión y conversión de claves SSH
+su # sustituir la identidad del usuario
+sudo # ejecutar un comando como otro usuario
+tail # muestra la última parte de los archivos
+tar # manipular archivos comprimidos
+tr # traducir o borrar caracteres
+uname # imprimir el nombre del sistema operativo
+uniq # informar u omitir líneas repetidas
+uptime # mostrar cuánto tiempo ha estado funcionando el sistema
+w # mostrar quién está conectado y qué está haciendo
+whereis # localizar los archivos binarios, de origen y de página manual de un comando
+which # localizar un comando
+wc # imprimir los recuentos de líneas nuevas, palabras y bytes de cada archivo
+xargs # construir y ejecutar líneas de comando desde la entrada estándar
+| # redirigir la salida estándar a otro comando
+> # redirigir la salida estándar
+< # redirigir la entrada estándar
+& # enviar el proceso a segundo plano
