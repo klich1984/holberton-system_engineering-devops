@@ -25,5 +25,4 @@ do
 	else
 		echo $k
 	fi
-
 done
