@@ -11,7 +11,7 @@ do
 	echo $i
 	case $i in
 		4)
-		echo $i "bad luck from China"
+		echo "bad luck from China"
 		;;
 		9)
 		echo "bad luck from Japan"
