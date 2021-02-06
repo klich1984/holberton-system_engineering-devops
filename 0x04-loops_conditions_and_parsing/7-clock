@@ -7,7 +7,7 @@ min=1
 hour=0
 flag=0
 
-while [ $hour -lt 12 ]
+while [ $hour -le 12 ]
 do
 	echo "Hour:" $hour
 		while [ $min -le 59 ]
