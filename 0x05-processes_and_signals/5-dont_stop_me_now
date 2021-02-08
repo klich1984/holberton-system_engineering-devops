@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# script that stops 4-to_infinity_and_beyond process.
+
+# Requirements:
+
+# You must use kill
+
+i=$(pgrep -f "4-to_infinity_and_beyond")
+echo $i
