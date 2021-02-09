@@ -6,5 +6,6 @@
 # You cannot use kill or killall
 
 i=$(pgrep -f "4-to_infinity_and_beyond")
+# the next command gives me the name of the last PID
 j=$(ps -p "$i" -o comm=)
 pkill "$j"
