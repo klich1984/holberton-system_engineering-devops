@@ -64,19 +64,19 @@ sylvain@ubuntu$
 ## Table of Content
 ------------
 
- - [0. OSI model](#0._OSI_model)
- - [1. Types of network](#task1)
- - [2. MAC and IP address](#task2)
- - [3. UDP and TCP](#task3)
- - [4. TCP and UDP ports](#task4)
- - [5. Is the host on the network](#task5)
+ - [0. OSI model](#Task0)
+ - [1. Types of network](#Task1)
+ - [2. MAC and IP address](#Task2)
+ - [3. UDP and TCP](#Task3)
+ - [4. TCP and UDP ports](#Task4)
+ - [5. Is the host on the network](#Task5)
 
 
 -------
 # Tasks
 -------
 
-# 0. OSI model
+## Task0
 mandatory
 OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
 
@@ -110,7 +110,7 @@ Alphabetically
 From the lowest to the highest level
 Randomly
 ___________________
-# 1. Types of network
+## Task1
 
 ![Img task1](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210223T151643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=fcb7cc94b7eedca4bbeb776b9b2549b40956b37ffff7f23edba4ec66fc833d71)
 
@@ -122,7 +122,7 @@ What type of network a computer in local is connected to?
 1. Internet
 2. WAN
 3. LAN
-
+4. 
 What type of network could connect an office in one building to another office in a building a few streets away?
 1. Internet
 2. WAN
@@ -134,7 +134,7 @@ What network do you use when you browse www.holbertonschool.com from your smartp
 3. LAN
 
 _______________________
-# 2. MAC and IP address
+## Task2
 
 ![Img task2](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210223T151643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=10a5089899b0a833593259bae0b6abc407adfc309f682f11bc8c45837769625b)
 
@@ -153,7 +153,7 @@ What is an IP address?
 3. Is a number that network devices use to connect to networks
 
 _________________
-# 3. UDP and TCP
+## Task3
 
 ![Img task3](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210223T151643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=54f0c7693f95658c487f32913072b6f5ae3fc43aa669f4dac639c9a6b17adcd6)
 
@@ -172,7 +172,7 @@ __Questions:__
   2. `May I increase the rate at which I am sending you boxes?`
 
 ______________________
-# 4. TCP and UDP ports
+## Task4
 
 Once packets have been sent to the right network device using IP using either UDP or TCP as a mode of transportation, it needs to actually enter the network device.
 
@@ -223,7 +223,7 @@ unix  2      [ ACC ]     SEQPACKET  LISTENING     7156     378/systemd-udevd   /
 sylvain@ubuntu$
 ```
 _______________________________
-# 5. Is the host on the network
+## Task5
 
 ![Img task5](https://media.giphy.com/media/uDxkJAVSU7GY8/giphy.gif)
 
@@ -254,7 +254,7 @@ rtt min/avg/max/mdev = 7.570/10.682/13.679/2.546 ms
 sylvain@ubuntu$
 sylvain@ubuntu$ ./5-is_the_host_on_the_network
 Usage: 5-is_the_host_on_the_network {IP_ADDRESS}
-sylvain@ubuntu$
+sylvain@ubuntu$ 
 ```
 It is interesting to look at the `time` value, which is the time that it took for the ICMP request to go to the `8.8.8.8` IP and come back to my host. The IP `8.8.8.8` is owned by Google, and the quickest roundtrip between my computer and Google was 7.57 ms which is pretty fast, which is a sign that the network path between my computer and Google’s datacenter is in good shape. A slow ping would indicate a slow network.
 
