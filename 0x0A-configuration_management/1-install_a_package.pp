@@ -1,5 +1,5 @@
 # Install puppet-lint using puppet
-package { 'task-1':
+package {
   name    => 'puppet-lint',
   ensure  => '2.1.1',
 }
