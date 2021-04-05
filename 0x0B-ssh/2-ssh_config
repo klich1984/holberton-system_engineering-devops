@@ -1,0 +1,6 @@
+
+endEnv LANG LC_*
+HashKnownHosts yes
+GSSAPIAuthentication yes
+IdentityFile ~/.ssh/holberton
+PasswordAuthentication no
