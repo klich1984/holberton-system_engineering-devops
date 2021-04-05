@@ -140,7 +140,6 @@ Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
 Last login: Mon Feb 20 18:26:38 2017 from 104.7.14.91
 ubuntu@magic-server:~$
 ```
-
 In the example above, we can see that `ssh` tries to authenticate using `holberton` and does not try to authenticate using a password. You can replace `98.98.98.98` by the IP of your server for testing purposes.
 ---
 ## task 3 Let me in!
