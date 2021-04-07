@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# script that transfers a file from our client to a server
+if [[ $# < 3 ]]
+then
+	echo Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
+else
+	echo pasaron mas de tres argumentos $0 $1 $2 $3
+fi
