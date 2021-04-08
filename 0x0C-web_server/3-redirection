@@ -1,7 +1,11 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 # script that redirect
 
 apt-get update
 apt-get -y install nginx
 echo Holberton School > /var/www/html/index.html
-service nginx start
+new_string="https://carlosum369.com/yariss-nanorepolarizador/"
+file="/etc/nginx/sites-available/default"
+sed -i /"listen default_server/a rewrite ^/redirect_me ${new_string} permanent;"/ $file
+
+service nginx restart
