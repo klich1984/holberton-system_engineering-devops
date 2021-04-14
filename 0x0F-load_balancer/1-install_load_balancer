@@ -7,7 +7,7 @@ dir="/etc/haproxy/haproxy.cfg"
 {
 echo -e "frontend first_front"
 echo -e "\tbind *:80"
-echo -e "\tstats uri /haproxy?stats"
+echo -e "\tmode http"
 echo -e "\tdefault_backend first_back"
 
 echo -e "\nbackend first_back"
