@@ -5,15 +5,15 @@ apt-get install -y haproxy
 dir="/etc/haproxy/haproxy.cfg"
 
 {
-echo -e "\tfrontend first_front"
-echo -e "\t\tbind *:80"
-echo -e "\t\tstats uri /haproxy?stats"
-echo -e "\t\tdefault_backend first_back"
+echo -e "frontend first_front"
+echo -e "\tbind *:80"
+echo -e "\tstats uri /haproxy?stats"
+echo -e "\tdefault_backend first_back"
 
-echo -e "\n\tbackend first_back"
-echo -e "\t\tbalance roundrobin"
-echo -e "\t\tserver 2239-web-01 35.237.246.228:80 check"
-echo -e "\t\tserver 2239-web-02 35.190.168.95:80 check"
+echo -e "\nbackend first_back"
+echo -e "\tbalance roundrobin"
+echo -e "\tserver 2239-web-01 35.237.246.228:80 check"
+echo -e "\tserver 2239-web-02 35.190.168.95:80 check"
 } >> $dir
 
 service haproxy start
