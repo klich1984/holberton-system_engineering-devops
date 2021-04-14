@@ -6,10 +6,11 @@ dir="/etc/haproxy/haproxy.cfg"
 
 echo "frontend first_front" >> $dir
 echo "bind *:80" >> $dir
+echo "stats uri /haproxy?stats" >> dir
 echo "default_backend first_back" >> $dir
 
 echo "backend first_back" >> $dir
-echo "server 2239-web-01 35.237.246.228" >> $dir
-echo "server 2239-web-02 35.190.168.95" >> $dir
+echo "server 2239-web-01 35.237.246.228:80 check" >> $dir
+echo "server 2239-web-02 35.190.168.95:80 check" >> $dir
 
 service haproxy start
