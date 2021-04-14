@@ -12,6 +12,6 @@ sed -i "/listen 80 default_server/a \\\trewrite ^/redirect_me $new_string perman
 echo "Ceci n'est pas une page" > /var/www/html/new_404.html
 sed -i "/listen 80 default_server;/a \\\terror_page 404 /new_404.html;" $file
 
-sed -i "/listen 80 default_server;/a \\\tadd_header X-Served-By $hostname;" $file
+sed -i "/listen 80 default_server;/a \\\tadd_header X-Served-By $HOSTNAME;" $file
 
 service nginx restart
