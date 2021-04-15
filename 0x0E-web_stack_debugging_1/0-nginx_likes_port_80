@@ -3,6 +3,6 @@
 
 file="/etc/nginx/sites-enabled/default"
 
-sed 's/8080/80/g' $file
+sed -i 's/8080/80/g' $file
 
 service nginx restart
