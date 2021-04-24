@@ -1,50 +1,51 @@
-# Project 0x06. Regular expression
+# 0x06. Regular expression
 
-Background Context
-For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
+## Resources :eyes:
+Read or watch:
+* [Regular expressions - basics](https://intranet.hbtn.io/rltoken/SJ2eQ7V2iQlCgLc-L96zWg)
+* [Regular expressions - advanced](https://intranet.hbtn.io/rltoken/qyjWL-J1_qUaZGR690gH1Q)
+* [Rubular is your best friend](https://intranet.hbtn.io/rltoken/WCjn8NgohbQ5NGXEObWZvQ)
+* [Use a regular expression against a problem: now you have 2 problems](https://intranet.hbtn.io/rltoken/Zfvv_ydOCvJ_YaBB6eDqVw)
+* [Learn Regular Expressions with simple, interactive exercises](https://intranet.hbtn.io/rltoken/Y-OVGcJ5cskdXWIBowiE_A)
 
-Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //:
+---
+## Learning Objectives :technologist:
+What you should learn from this project:
 
-```
-sylvain@ubuntu$ cat example.rb
-#!/usr/bin/env ruby
-puts ARGV[0].scan(/127.0.0.[0-9]/).join
-sylvain@ubuntu$
-sylvain@ubuntu$ ./example.rb 127.0.0.2
-127.0.0.2
-sylvain@ubuntu$ ./example.rb 127.0.0.1
-127.0.0.1
-sylvain@ubuntu$ ./example.rb 127.0.0.a
-```
+---
 
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted on Ubuntu 14.04 LTS
-All your files should end with a new line
-A README.md file, at the root of the folder of the project, is mandatory
-All your Bash script files must be executable
-The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
-All your regex must be built for the Oniguruma library
+### [0. Simply matching Holberton](./0-simply_match_holberton.rb)
+* 
 
-0. Simply matching Holberton
 
-Imagen
+### [1. Repetition Token #0](./1-repetition_token_0.rb)
+* 
 
-Requirements:
 
-The regular expression must match Holberton
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
-Example:
+### [2. Repetition Token #1](./2-repetition_token_1.rb)
+* 
 
-```
-sylvain@ubuntu$ ./0-simply_match_holberton.rb Holberton | cat -e
-Holberton$
-sylvain@ubuntu$ ./0-simply_match_holberton.rb "Holberton School" | cat -e
-Holberton$
-sylvain@ubuntu$ ./0-simply_match_holberton.rb "Holberton School Holberton" | cat -e
-HolbertonHolberton$
-sylvain@ubuntu$ ./0-simply_match_holberton.rb "Grace Hopper" | cat -e
-$
-```
-1. Repetition Token #0
+
+### [3. Repetition Token #2](./3-repetition_token_2.rb)
+* 
+
+
+### [4. Repetition Token #3](./4-repetition_token_3.rb)
+* 
+
+
+### [5. Not quite HBTN yet](./5-beginning_and_end.rb)
+* Requirements:
+
+
+### [6. Call me maybe](./6-phone_number.rb)
+* This task is brought to you by Holberton professional advisor Neha Jain, Senior Software Engineer at LinkedIn.
+
+
+### [7. OMG WHY ARE YOU SHOUTING?](./7-OMG_WHY_ARE_YOU_SHOUTING.rb)
+* 
+
+---
+
+## Author :writing_hand: :alien:
+* **Carlos Usuga Martinez** - [klich1984](https://github.com/klich1984)
