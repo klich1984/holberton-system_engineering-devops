@@ -1,11 +1,16 @@
 # 0x11. What happens when you type holbertonschool.com in your browser and press Enter
 
-## Resources :eyes:
-Read or watch:
+## Concepts :eyes:
+For this project, students are expected to look at this concept:
+[Technical Writing Tips and Tricks for Holberton School students](https://intranet.hbtn.io/concepts/134)
 
 ---
-## Learning Objectives :technologist:
-What you should learn from this project:
+## Background Context :technologist:
+Being a Full-Stack Software Engineer means you’re comfortable interacting with any layer of the stack.
+
+A way to easily assess this is to simply ask an engineer to explain how a software system works. They can have a general overview of the flow or can choose to dig deep in a certain area.
+
+Let’s practice by exploring the infrastructure side (network, servers, security…) of the question.
 
 ---
 
@@ -30,8 +35,6 @@ Requirements, your post must cover:
 Publish your blog post on Medium or LinkedIn; share the URL of your blog post in your answer file and in the field below.
 
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
-
-
 
 ---
 
