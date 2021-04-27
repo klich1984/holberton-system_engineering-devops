@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # script that configures the containe, running as nginx user, listening on all active IPs on port 8080
 # 1 cambiar permisos de la carpeta
-# chmod 777 /etc/nginx/nginx.conf
+chmod 777 /etc/nginx/nginx.conf
 # 2 introducir el usuario user nginx; a la archivo /etc/nginx/nginx.conf
-sudo sed -i -e 's/#user www-data;/user nginx;/' /etc/nginx/nginx.conf
-sudo sed -i .e 's/80/8080/g' /etc/nginx/sites-available/default
+sed -i -e 's/#user www-data;/user nginx;/' /etc/nginx/nginx.conf
+sed -i .e 's/80/8080/g' /etc/nginx/sites-available/default
 pkill apache2
 sudo service nginx restart
