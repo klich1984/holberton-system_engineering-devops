@@ -17,21 +17,20 @@ if __name__ == '__main__':
     req_user = requests.get(
         "https://jsonplaceholder.typicode.com/users/"+str(argv[1]))
 
-    json_t = req_all.json()
-    json_u = req_user.json()
-    user_name = json_u.get("name")
+    user_name = req_user.json().get("name")
+    # instance of json representation
+    json_all = req_all.json()
 
-    totaol_num_task = 0
-    num_done_task = 0
-    count = 0
-    list1 = []
-    for tasks in json_t:
-        totaol_num_task += 1
+    total_num_task = num_done_task = count = 0
+    # list1 = []
+    for tasks in json_all:
+        total_num_task += 1
         if tasks['completed'] is True:
-            list1 += [tasks['title']]
+            # list1 += [tasks['title']]
             num_done_task += 2
-    print("Employee {} is done with tasks({}/{}):".format(user_name,
-          num_done_task, totaol_num_task))
 
-    for count in list1:
-        print('\t{}'.format(count))
+    print("Employee {} is done with tasks({}/{}):".format(user_name,
+          num_done_task, total_num_task))
+    for task in json_all:
+        if task['completed'] is True:
+            print('\t{}'.format(task.get('title')))
