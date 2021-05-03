@@ -27,10 +27,10 @@ if __name__ == '__main__':
         total_num_task += 1
         if tasks['completed'] is True:
             # list1 += [tasks['title']]
-            num_done_task += 2
+            num_done_task += 1
 
     print("Employee {} is done with tasks({}/{}):".format(user_name,
           num_done_task, total_num_task))
     for task in json_all:
         if task['completed'] is True:
-            print('\t{}'.format(task.get('title')))
+            print('\t {}'.format(task.get('title')))
