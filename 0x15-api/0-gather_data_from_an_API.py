@@ -13,8 +13,10 @@ if __name__ == '__main__':
         Args:
             argv ([str]): id that employed
         """
-    req_all = requests.get("https://jsonplaceholder.typicode.com/todos/?userId="+str(argv[1]))
-    req_user = requests.get("https://jsonplaceholder.typicode.com/users/"+str(argv[1]))
+    req_all = requests.get(
+        "https://jsonplaceholder.typicode.com/todos/?userId="+str(argv[1]))
+    req_user = requests.get(
+        "https://jsonplaceholder.typicode.com/users/"+str(argv[1]))
 
     json_t = req_all.json()
     json_u = req_user.json()
@@ -26,10 +28,11 @@ if __name__ == '__main__':
     list1 = []
     for tasks in json_t:
         totaol_num_task += 1
-        if tasks['completed'] == True:
+        if tasks['completed'] is True:
             list1 += [tasks['title']]
-            num_done_task +=2
-    print("Employee {} is done with tasks({}/{}):".format(user_name, num_done_task, totaol_num_task))
+            num_done_task += 2
+    print("Employee {} is done with tasks({}/{}):".format(user_name,
+          num_done_task, totaol_num_task))
 
     for count in list1:
         print('\t{}'.format(count))
