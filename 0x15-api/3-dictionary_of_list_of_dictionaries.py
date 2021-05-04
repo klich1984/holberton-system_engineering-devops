@@ -1,36 +1,29 @@
 #!/usr/bin/python3
-""" Task 3 """
+"""ejercicio 3"""
 import json
 import requests
-from sys import argv
 
 
-if __name__ == '__main__':
-    def Requests_API(argv):
-        """
-
-        Args:
-            argv ([str]): id that employed
-        """
-    req_all = requests.get(
-        "https://jsonplaceholder.typicode.com/todos/?userId="+str(argv[1]))
-    req_user = requests.get(
-        "https://jsonplaceholder.typicode.com/users/"+str(argv[1]))
-
-    user_name = req_user.json().get("username")
-    # instance of json representation
-    json_all = req_all.json()
-
-    dic_ppl = {}
-    lis_json = []
-    # dic = {'task': '', 'completed': None, 'username': user_name}
-    for i in json_all:
-        dic = {'task': '', 'completed': None, 'username': user_name}
-        task_title = i.get('title')
-        compl = i.get('completed')
-        dic.update(task=task_title, completed=compl)
-        lis_json.append(dic)
-    dic_ppl.update({argv[1]: lis_json})
-
-    with open('{}.json'.format(argv[1]), 'w', encoding='utf-8') as f:
-        json.dump(dic_ppl, f)
+def export_json_2():
+    """Export to JSON"""
+    t = "https://jsonplaceholder.typicode.com/todos/"
+    users = "https://jsonplaceholder.typicode.com/users/"
+    response_todos = requests.get(t)
+    response_users = requests.get(users)
+    dic_t = response_todos.json()
+    dic_u = response_users.json()
+    dict_ = {}
+    for count_2 in dic_u:
+        username_ = count_2.get('username')
+        list_j = []
+        for count in dic_t:
+            if count_2.get("id") == count.get("userId"):
+                dictionary = {'username': '', 'task': '', 'completed': None}
+                title_ = count.get('title')
+                completed_ = count.get('completed')
+                username_ = count_2.get('username')
+                dictionary.update(task=title_, completed=completed_,
+                                  username=username_)
+                list_j.append(dictionary)
+                x = count_2.get('id')
+        dict_.update({x: list_j})
